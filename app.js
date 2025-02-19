@@ -22,7 +22,7 @@ function agregarAmigo() {
     listaAmigos.push(campoAmigo.value);
 
 }
-    listaAmigos.innerHTML = "";
+     listaAmigos.innerHTML = "";
     
 
 
