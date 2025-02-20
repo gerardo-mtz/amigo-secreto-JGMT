@@ -20,6 +20,8 @@ if (campoAmigo.value === "") {
 function agregarAmigo() {
     listaAmigos.push(campoAmigo.value);
     ulListaAmigos.innerHTML += `<li>${campoAmigo.value}</li>`;
+    // Limpia el campo de amigo debe estar dentro de la funcion que agrega el amigo
+    campoAmigo.value = "";
 }
 
 // Esta funcion elige un amigo aleatorio de la lista 'listaAmigos' y muestra el resultado
