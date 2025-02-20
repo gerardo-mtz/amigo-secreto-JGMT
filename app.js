@@ -4,10 +4,11 @@
 let listaAmigos = [];
 let campoAmigo = document.getElementById("amigo");
 let ulListaAmigos = document.getElementById("listaAmigos");
+let ulResultado = document.getElementById("resultado");
 
-// Check if the input field 'campoAmigo' is null. If so, alert the user to insert a name.
-// Otherwise, retrieve the value from the input field, add it to 'listaAmigos', and clear the input field.
-if (campoAmigo === null) {
+// Revisa si el campo de amigo esta vacio y alerta al usuario de ser asi
+//Si el campo de amigo no esta vacio, agrega el amigo a la lista 'listaAmigos' y limpia el campo
+if (campoAmigo.value === "") {
     alert("Por favor, inserte un nombre");
 } else {
     let nombreAmigo = campoAmigo.value;
@@ -15,15 +16,14 @@ if (campoAmigo === null) {
     campoAmigo.value = "";
 }
 
-//Adds the value from the input field 'campoAmigo' to the 'listaAmigos' array.
-//It retrieves the current value from the input field and appends it to the list.
-
+//Esta funcion agrega un amigo a la lista 'listaAmigos' y lo muestra en la lista de amigos
 function agregarAmigo() {
     listaAmigos.push(campoAmigo.value);
-
+    ulListaAmigos.innerHTML += `<li>${campoAmigo.value}</li>`;
 }
-     listaAmigos.innerHTML = "";
-    
 
-
-
+// Esta funcion elige un amigo aleatorio de la lista 'listaAmigos' y muestra el resultado
+function sortearAmigo() {
+    let amigoSecreto = listaAmigos[Math.floor(Math.random() * listaAmigos.length)];
+    ulResultado.innerHTML = `<li>El amigo secreto es: ${amigoSecreto}</li>`;
+}
