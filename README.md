@@ -31,14 +31,6 @@ El objetivo de este proyecto es que se almacene una lista de nombres en un arreg
 * `style.css`: El archivo CSS que contiene los estilos de la página.
 * `script.js`: El archivo JavaScript que contiene la lógica de la aplicación.
 
-## Posibles mejoras
-
-* Permitir a los usuarios ingresar direcciones de correo electrónico para enviar el resultado del sorteo automáticamente.
-* Agregar estilos CSS para mejorar la apariencia de la página.
-* Implementar una función para evitar que una persona se elija a sí misma como amigo secreto.
-* Agregar validaciones adicionales para el campo de entrada de nombres.
-* Guardar la lista de amigos en el almacenamiento local del navegador para que persista entre sesiones.
-
 ## Autor
 
 * [Pepe Martinez]
