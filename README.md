@@ -25,8 +25,7 @@ El objetivo de este proyecto es que se almacene una lista de nombres en un arreg
 1.  Clona este repositorio: `git clone https://github.com/gerardo-mtz/Amigo-Secreto-JGMT.git`
 2.  Abre el archivo `index.html` en tu navegador web.
 
-  Alternativa
-  Abrir en GitHub pages:
+  Como alternativa se puede abrir el documento desde GitHub pages:
   https://gerardo-mtz.github.io/amigo-secreto-JGMT/
 
 ## Estructura del proyecto
